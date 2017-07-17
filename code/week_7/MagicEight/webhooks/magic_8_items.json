@@ -1,0 +1,11 @@
+{
+  "event": "magic8_list_items",
+  "url": "https://spreadsheets.google.com/feeds/cells/1TgbQRTXTUFpo0YPES0bFOt2D88zkdcKl8W5xSF2mcFw/{{SPARK_EVENT_VALUE}}/public/basic?alt=json",
+  "requestType": "GET",
+  "responseTemplate": "{{#feed}}{{#entry}}{{content.$t}},{{/entry}}{{/feed}}",
+  "headers": null,
+  "query": null,
+  "json": null,
+  "auth": null,
+  "mydevices": true
+}

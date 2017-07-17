@@ -1,0 +1,12 @@
+{
+  "event": "magic8_list_sheets",
+  "url": "https://spreadsheets.google.com/feeds/worksheets/1TgbQRTXTUFpo0YPES0bFOt2D88zkdcKl8W5xSF2mcFw/public/basic?alt=json",
+  "requestType": "GET",
+  "responseTemplate": "{{#feed}}{{#entry}}{{title.$t}}:{{id.$t}},{{/entry}}{{/feed}}",
+
+  "headers": null,
+  "query": null,
+  "json": null,
+  "auth": null,
+  "mydevices": true
+}

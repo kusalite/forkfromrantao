@@ -1,0 +1,6 @@
+.DS_Store
+wiring/*
+*/.DS_Store
+*.txt
+web/*
+webhooks/*

@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="row">
+
+		<div class="title-bar">
+		  <div class="title-bar-left">
+		    <span class="title-bar-title">Magic8</span>
+		  </div>
+		  <div class="title-bar-right">
+		  </div>
+		</div>
+
+    </div>
+
+		  <ul class="tabs" data-tabs id="app-tabs">
+		    <li class="tabs-title is-active"><a href="#home" aria-selected="true">Lists</a></li>
+		    <li class="tabs-title"><a href="#history">History</a></li>
+		    <li class="tabs-title"><a href="#settings">Settings</a></li>
+		  </ul>
+
+		  <div class="tabs-content" data-tabs-content="app-tabs">
+		    <div class="tabs-panel is-active" id="home">
+		      <p>Magic 8-Ball reaches into the future, to find the answers to your questions. It knows everything and now you can program it too.</p>
+			  
+			 <hr />
+			<div id="data-list-container">
+				<h3> Eight Ball Options </h3>
+				
+				<ul id="data-list">
+
+				</ul>
+				
+			</div>
+			
+			<hr/ >
+			
+			<h3>Switch to</h3>
+			  
+			  <div class="secondary button-group">
+			    <a class="button" onclick="switchToSpreadSheet( 1 )" >Greetings</a>
+			    <a class="button" onclick="switchToSpreadSheet( 2 )">Names</a>
+			    <a class="button" onclick="switchToSpreadSheet( 3 )">Places</a>
+			  </div>
+			  
+			  
+		    </div>
+		    <div class="tabs-panel" id="history">
+
+  	          <div class="row">
+  	            <div class="large-12 columns">
+
+  					<h2>History</h2>
+  	                <p><strong>See recent selections.</strong></p>
+
+					<hr />
+					
+					<div id="history-list">
+						<ul>
+	
+						</ul>
+						
+					</div>
+					<hr />
+
+					<p><a href="#" id="shakeButton" class="button">Shake it up!</a><br/>
+	
+			    </div>
+	          </div>
+
+		    </div>
+		    <div class="tabs-panel" id="settings">
+			  
+	          <div class="row">
+	            <div class="large-12 columns">
+
+					<h2>Settings</h2>
+	                <p><strong>Manage your settings and preferences.</p>
+	          
+			          <hr />
+
+			          <form>
+			            <div class="row">
+			              <div class="large-12 columns">
+			                <label>Device ID:</label>
+			                <input type="text" id="deviceIDInput" onKeyUp="return handleDeviceIDChange()" placeholder="large-12.columns" />
+			              </div>
+			            </div>
+			            <div class="row">
+			              <div class="large-12 columns">
+			                <label>Access Token</label>
+			                <input type="text" id="accessTokenInput" onKeyUp="return handleAccessTokenChange()" placeholder="large-12.columns" />
+			              </div>
+			            </div>
+
+
+			            <div class="row">
+			              <div class="large-12 columns">
+			                <label>Required Shake Time (s)</label>
+
+							<div class="slider" data-slider data-initial-start="1" data-end="10">
+							  <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+							  <span class="slider-fill" data-slider-fill></span>
+							  <input type="hidden" id="data-slider-hidden">
+							</div>
+							
+			              </div>
+			            </div>
+
+
+			           
+					   
+			          </form>
+			  
+			    </div>
+	          </div>
+			  
+		    </div>
+		  </div>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/miso.ds.deps.ie.min.0.4.1.js"></script>
+		  
+    <script src="js/app.js"></script>
+  </body>
+</html>

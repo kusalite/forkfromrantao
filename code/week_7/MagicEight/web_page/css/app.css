@@ -1,0 +1,55 @@
+#data-list{
+	list-style: none;
+}
+
+#data-list li{
+	padding: 10px 0;
+	font-weight: bold;
+	
+	
+}
+
+#data-list  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+}
+ 
+#data-list li {
+    margin: 0;
+  font: 20px/1.5 "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+ 
+#data-list li:last-child {
+  border: none;
+}
+ 
+#data-list li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ 
+#data-list li a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
+
+
+#history-list li {
+	padding: 10px 0;
+
+}
+#history-list span{
+	font-size: 0.8em;
+	color: #666;
+	display: block;
+}
